@@ -1,0 +1,26 @@
+.collapsible {
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: bold;
+    text-transform: capitalize;
+  }
+  &__icon {
+    transition: all 0.3s;
+    width: 10px;
+    height: 10px;
+  }
+  &.show {
+    .collapsible__icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+}
