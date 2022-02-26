@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import Collapsible, { IProps } from "./Collapsible";
+import { Collapsible } from "..";
 
 export default {
   title: "Components/Collapsible",
