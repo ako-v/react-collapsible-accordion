@@ -10,19 +10,26 @@ export default {
 
 const Template: ComponentStory<typeof Accordion> = args => (
   <Accordion {...args}>
-    <AccordionItem title="first">
+    <AccordionItem title="one" Icon="accordion-single-icon">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto numquam temporibus beatae recusandae in quisquam ipsa aperiam natus libero, ad labore quod
       a similique facilis non rerum dolor voluptatem odit eveniet repellendus deserunt? Minima, commodi odio. Nulla sint molestiae delectus debitis sed
       reiciendis fugiat! Velit itaque quis enim dolore maxime!
     </AccordionItem>
-    <div>salam</div>
-    <AccordionItem title="second" open={true}>
+    <AccordionItem title="two" Icon={Icon}>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ratione laudantium quo, nobis dolorem, dicta eum doloribus sunt corporis illo numquam hic,
+      at totam id expedita debitis fugit saepe mollitia?
+    </AccordionItem>
+    <AccordionItem title="three" open={true}>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto numquam temporibus beatae recusandae in quisquam ipsa aperiam natus libero, ad labore quod
       a similique facilis non rerum dolor voluptatem odit eveniet repellendus deserunt? Minima, commodi odio. Nulla sint molestiae delectus debitis sed
       reiciendis fugiat! Velit itaque quis enim dolore maxime!
     </AccordionItem>
   </Accordion>
 );
+
+const Icon: React.FC = () => {
+  return <span>♠</span>;
+};
 
 export const Default = Template.bind({});
 
