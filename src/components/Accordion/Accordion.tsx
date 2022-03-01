@@ -4,7 +4,13 @@ import AccordionItem, { IAccordionItem } from "./AccordionItem";
 import { guid } from "./utils";
 
 export interface IAccordion {
+  /**
+   * set it to true if you want to be able to view multible items opened at the same time
+   */
   allowMultipleOpen?: boolean;
+  /**
+   * custom class name for the outer div
+   */
   className?: string;
 }
 

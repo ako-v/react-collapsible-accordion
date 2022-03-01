@@ -27,8 +27,3 @@
   overflow: hidden;
   transition: all 0.2s ease-in-out;
 }
-
-.accordion-single-icon::before {
-  font-style: normal;
-  content: "\272D";
-}

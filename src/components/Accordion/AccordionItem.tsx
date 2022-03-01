@@ -1,16 +1,34 @@
-import React, { ComponentType, ReactNode, useEffect, useRef, useState } from "react";
+import React, { ComponentType, useEffect, useRef, useState } from "react";
 import "./Accordion.css";
 
 export interface IAccordionItem {
+  /**
+   * custom class name for the outer div
+   */
   className?: string;
-  Icon?: string | React.ComponentType;
-  itemKey?: string;
-  title?: string | ReactNode;
+  /**
+   *  Icon can be a font icon class name (string) or a component. if you don't provide it, there will be a default Icon
+   */
+  Icon?: string | ComponentType;
+  /**
+   *  Title can be a string or you can provide a custom component
+   */
+  Title?: string | ComponentType;
+  /**
+   *  open or cloded by default
+   */
   open?: boolean;
+  /**
+   * Do not need to provide this prop manually
+   */
   onClick?: (itemKey: string | undefined) => void;
+  /**
+   * Do not need to provide this prop manually
+   */
+  itemKey?: string;
 }
 
-const AccordionItem: React.FC<IAccordionItem> = ({ children, className, Icon, itemKey, onClick, open, title }) => {
+const AccordionItem: React.FC<IAccordionItem> = ({ children, className, Icon, itemKey, onClick, open, Title }) => {
   const bodyRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState<number | undefined>(open ? undefined : 0);
 
@@ -43,7 +61,7 @@ const AccordionItem: React.FC<IAccordionItem> = ({ children, className, Icon, it
   return (
     <div className={["accordion-item", open ? " show" : "", className ? " " + className : ""].join("")}>
       <div className="accordion-item__header" onClick={handleClick}>
-        {typeof title == "string" ? <div className="accordion-item__title">{title}</div> : title}
+        {Title && (typeof Title == "string" ? <div className="accordion-item__title">{Title}</div> : <Title />)}
 
         <div className="accordion-item__icon">
           {typeof Icon === "undefined" ? (
