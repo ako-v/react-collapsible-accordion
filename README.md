@@ -1,14 +1,17 @@
 # React-Collapsible-Accordion
+
 A React Collapsible and Accordion Component. You can easily implement collapsible and accordion with smooth transitions.
 
 ## Installation
 
 Install using npm:
+
 ```sh
 npm install --save react-collapsible-accordion
 ```
 
 Install using yarn:
+
 ```sh
 yarn add react-collapsible-accordion
 ```
@@ -26,7 +29,7 @@ import {Collapsible,Accordion,AccordionItem} from 'react-collapsible-accordion';
  reiciendis fugiat! Velit itaque quis enim dolore maxime!
 </Collapsilble>
 
-// or use Accordion 
+// or use Accordion
 <Accordion allowMultipleOpen={true}>
     <AccordionItem Title="one">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto numquam temporibus beatae recusandae in quisquam ipsa aperiam natus libero, ad labore quod
@@ -48,29 +51,27 @@ import {Collapsible,Accordion,AccordionItem} from 'react-collapsible-accordion';
 ## API
 
 Below we have all the props that we can use with the `<Collapsible>` component.
-| Name         | Type    | Default | Description |
+| Name | Type | Default | Description |
 | ------------ | ------- | ------- | ----------- |
-| **Title** | `string / ComponentType<{}>` |  | title of the collapsible item. Title can be a string or you can provide a custom component.|
+| **Title** | `string / ComponentType<{}>` | | title of the collapsible item. Title can be a string or you can provide a custom component.|
+| **Icon** | `string / ComponentType<{}>` | | Icon can be a font icon class name (string) or a component. if you don't provide it, there will be a default Icon |
 | **open** | `boolean` | `false` | is the collapsible opened or closed by default. |
-| **className** | `string` |  | Custom class name for the outer div.|
-| **Icon** | `string / ComponentType<{}>` |  | Icon can be a font icon class name (string) or a component. if you don't provide it, there will be a default Icon |
 | **onClick** | `function` | `() => void` | Optional click handler.|
-
+| **className** | `string` | | Custom class name for the outer div.|
 
 Below we have all the props that we can use with the `<AccordionItem>` component.
-| Name         | Type    | Default | Description |
+| Name | Type | Default | Description |
 | ------------ | ------- | ------- | ----------- |
-| **Title** | `string / ComponentType<{}>` |  | title of the collapsible item. Title can be a string or you can provide a custom component.|
+| **Title** | `string / ComponentType<{}>` | | title of the collapsible item. Title can be a string or you can provide a custom component.|
+| **Icon** | `string / ComponentType<{}>` | | Icon can be a font icon class name (string) or a component. if you don't provide it, there will be a default Icon |
 | **open** | `boolean` | `false` | is the collapsible opened or closed by default. |
-| **className** | `string` |  | Custom class name for the outer div.|
-| **Icon** | `string / ComponentType<{}>` |  | Icon can be a font icon class name (string) or a component. if you don't provide it, there will be a default Icon |
-
+| **className** | `string` | | Custom class name for the outer div.|
 
 Below we have all the props that we can use with the `<Accordion>` component.
-| Name         | Type    | Default | Description |
+| Name | Type | Default | Description |
 | ------------ | ------- | ------- | ----------- |
 | **allowMultipleOpen** | `boolean` | `false` | set it to true if you want to be able to view multible items opened at the same time. |
-| **className** | `string` |  | Custom class name for the outer div.|
+| **className** | `string` | | Custom class name for the outer div.|
 
 ## License
 
