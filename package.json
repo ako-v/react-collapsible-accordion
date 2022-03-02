@@ -1,9 +1,17 @@
 {
   "name": "react-collapsible-accordion",
-  "version": "1.0.0",
-  "description": "A collapsible and accordion for react",
+  "version": "1.0.2",
+  "description": "A React collapsible and accordion wrapper with smooth transition.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "component",
+    "collapse",
+    "collapsible",
+    "accordion"
+  ],
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
@@ -12,6 +20,16 @@
   },
   "author": "Ako Veysinejad",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ako-v/react-collapsible-accordion"
+  },
+  "bugs": {
+    "url": "https://github.com/ako-v/react-collapsible-accordion/issues"
+  },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@rollup/plugin-commonjs": "^21.0.1",
@@ -43,9 +61,5 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  },
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts"
+  }
 }

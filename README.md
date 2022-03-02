@@ -75,4 +75,4 @@ Below we have all the props that we can use with the `<Accordion>` component.
 
 ## License
 
-Copyright (c) 2014-2021 A.Veysinejad. Licensed under MIT license, see [LICENSE](LICENSE) for the full license.
+React Collapsible Accordion is licensed under MIT license, see [LICENSE](LICENSE) for the full license.
