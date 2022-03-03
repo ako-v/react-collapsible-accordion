@@ -28,6 +28,9 @@ export interface IAccordionItem {
   itemKey?: string;
 }
 
+/**
+ * Collapsible component. we must use this inside Accordion component or it will not have full functionality.
+ */
 const AccordionItem: React.FC<IAccordionItem> = ({ children, className, Icon, itemKey, onClick, open, Title }) => {
   const bodyRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState<number | undefined>(open ? undefined : 0);

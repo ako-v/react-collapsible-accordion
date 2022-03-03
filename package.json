@@ -15,14 +15,18 @@
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "predeploy": "build-storybook",
+    "deploy": "gh-pages -d build-storybook"
   },
   "author": "Ako Veysinejad",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ako-v/react-collapsible-accordion"
+  },
+  "home": {
+    "url": "https://ako-v.github.io/react-collapsible-accordion"
   },
   "bugs": {
     "url": "https://github.com/ako-v/react-collapsible-accordion/issues"
@@ -48,6 +52,7 @@
     "@types/react-dom": "^17.0.11",
     "babel-loader": "^8.2.3",
     "css-loader": "^3.6.0",
+    "gh-pages": "^3.2.3",
     "rollup": "^2.67.3",
     "rollup-plugin-dts": "^4.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",

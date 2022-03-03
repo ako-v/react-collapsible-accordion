@@ -14,6 +14,9 @@ export interface IAccordion {
   className?: string;
 }
 
+/**
+ * Accordion component.
+ */
 const Accordion: React.FC<IAccordion> = ({ allowMultipleOpen = false, children, className }) => {
   const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
   const [itemKeys, setItemKeys] = useState<string[]>([]);
