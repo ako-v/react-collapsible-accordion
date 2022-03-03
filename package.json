@@ -17,7 +17,7 @@
     "storybook": "start-storybook -p 6006",
     "prepublishOnly": "npm run build",
     "predeploy": "build-storybook",
-    "deploy": "gh-pages -d build-storybook"
+    "deploy": "gh-pages -d storybook-static"
   },
   "author": "Ako Veysinejad",
   "license": "MIT",
