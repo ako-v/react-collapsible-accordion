@@ -2,6 +2,10 @@
 
 A React Collapsible and Accordion Component. You can easily implement collapsible and accordion with smooth transitions.
 
+## Demo
+
+You can try the demo [Here](https://ako-v.github.io/react-collapsible-accordion).
+
 ## Installation
 
 Install using npm:

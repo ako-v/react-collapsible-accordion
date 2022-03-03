@@ -1,6 +1,6 @@
 {
   "name": "react-collapsible-accordion",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React collapsible and accordion wrapper with smooth transition.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
